@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Research Paper Tracker</title>
+</head>
+<body>
+    <h1>Research Paper Tracker</h1>
+    <form method="POST">
+        <input type="text" name="instructor_name" placeholder="Enter Instructor's Name">
+        <button type="submit">Search</button>
+    </form>
+    {% if results %}
+        <h2>Results:</h2>
+        <ul>
+            {% for result in results %}
+                <li>
+                    <strong>Title:</strong> {{ result.title }}<br>
+                    <strong>Authors:</strong> {{ result.authors }}<br>
+                    <strong>Date:</strong> {{ result.date }}
+                </li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+</body>
+</html>
+
