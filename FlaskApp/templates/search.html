@@ -1,1 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Tracker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <style>
+        body {
+            background-color: rgb(255, 240, 251);
+            color: rgb(133, 87, 133);
+        }
+
+        nave{
+            background-color: rgb(236, 268, 211);
+        }
+        
+        header, footer {
+            background-color: rgb(236, 168, 211);
+            color: rgb(255, 240, 255);
+        }
+        
+        .btn-primary {
+            background-color: rgb(247, 185, 240);
+            color: rgb(127, 49, 95);
+            border: none;
+        }
+        
+        .btn-primary:hover {
+            background-color: rgb(73, 35, 69);
+            color: rgb(247, 185, 240);
+        }
+        
+        /* Additional styling as needed */
+        
+        body {
+            background-size: cover;
+            backdrop-filter: blur(5px); /* Apply blur effect */
+            background-attachment: fixed; /* Optional: to make the background fixed during scroll */
+        }
+        
+        /* Bootstrap Centering and Responsiveness */
+        .centered-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Full viewport height */
+        }
+        
+        /* Existing styles */
+        /* ... */
+        
+        /* Additional responsive adjustments */
+        @media (max-width: 768px) {
+            /* Adjustments for smaller screens */
+        }
+    </style>
+</head>
+<body>
+  <!--nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">Home</a>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search"><a href="#C:\xampp\htdocs\sw\logout.php">Logout</a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z"/>
+            <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+          </svg>
+        </form>
+      </div>
+    </div>
+  </nav-->
+
+  <div class="container"><br><br>
+    <div class="">
+      <div class="">
+        <h1><center>Scholary Research Tracker</center></h1>
+          <form action="/" method="post"  class="d-grid gap-2">
+            <input type="text" id="searchInput" class="form-control" placeholder="Enter search query" name="instructor_name">
+            <button type="submit" class="btn btn-primary mt-3">Search</button>
+          </form><br>
+
+          <div class="d-flex flex-wrap justify-content-center gap-2 mb-5">
+            <span class="badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
+              <img class="rounded-circle me-1" width="24" height="24" src="" href="#">Akila Sarirete
+            </span>
+            <span class="badge d-flex align-items-center p-1 pe-2 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill">
+              <img class="rounded-circle me-1" width="24" height="24" src="" alt="">Tayeb Brahimi
+            </span>
+            <span class="badge d-flex align-items-center p-1 pe-2 text-success-emphasis bg-success-subtle border border-success-subtle rounded-pill">
+              <img class="rounded-circle me-1" width="24" height="24" src="" alt="">Zain Balfagih
+            </span>
+            <span class="badge d-flex align-items-center p-1 pe-2 text-danger-emphasis bg-danger-subtle border border-danger-subtle rounded-pill">
+              <img class="rounded-circle me-1" width="24" height="24" src="" alt="">Mohammed Mousa
+            </span>
+            <span class="badge d-flex align-items-center p-1 pe-2 text-warning-emphasis bg-warning-subtle border border-warning-subtle rounded-pill">
+              <img class="rounded-circle me-1" width="24" height="24" src="" alt="">Omar Kitannah
+            </span>
+            <span class="badge d-flex align-items-center p-1 pe-2 text-info-emphasis bg-info-subtle border border-info-subtle rounded-pill">
+              <img class="rounded-circle me-1" width="24" height="24" src="" alt="">Fidaa Abed
+            </span>
+            <span class="badge d-flex align-items-center p-1 pe-2 text-dark-emphasis bg-light-subtle border border-dark-subtle rounded-pill">
+              <img class="rounded-circle me-1" width="24" height="24" src="" alt="">Passant Elkafrawy
+            </span>
+            <span class="badge d-flex align-items-center p-1 pe-2 text-dark-emphasis bg-danger-subtle border border-dark-subtle rounded-pill">
+              <img class="rounded-circle me-1" width="24" height="24" src="" alt="">Enfel Barakat
+            </span>
+
+            <span class="badge d-flex align-items-center p-1 pe-2 text-dark-emphasis bg-light-subtle border border-dark-subtle rounded-pill">
+              <img class="rounded-circle me-1" width="24" height="24" src="" alt="">Aziza Ibrahim
+            </span>
+            <span class="badge d-flex align-items-center p-1 pe-2 text-dark-emphasis bg-dark-subtle border border-dark-subtle rounded-pill">
+              <img class="rounded-circle me-1" width="24" height="24" src="" alt="">Mohammed Abdulmajid
+            </span>
+
+            <span class="badge d-flex align-items-center p-1 pe-2 text-dark-emphasis bg-info-subtle border border-dark-subtle rounded-pill">
+              <img class="rounded-circle me-1" width="24" height="24" src="" alt="">Nema Salem
+            </span>
+            <span class="badge d-flex align-items-center p-1 pe-2 text-dark-emphasis bg-success-subtle border border-dark-subtle rounded-pill">
+              <img class="rounded-circle me-1" width="24" height="24" src="" alt="">Sohail Khan
+            </span>
+
+            <span class="badge d-flex align-items-center p-1 pe-2 text-dark-emphasis bg-light-subtle border border-dark-subtle rounded-pill">
+              <img class="rounded-circle me-1" width="24" height="24" src="" alt="">Narjisse Kabbaj
+            </span>
+            <span class="badge d-flex align-items-center p-1 pe-2 text-dark-emphasis bg-dark-subtle border border-dark-subtle rounded-pill">
+              <img class="rounded-circle me-1" width="24" height="24" src="" alt="">Mohammad Nauman
+            </span>
+            
+          </div>
+
+          <div>
+            {% if results %}
+              <table class="table table-striped mt-3">
+                <thead>
+                  <tr>
+                    <th>
+                      {% if excel_file %}
+                      <button><a  href="{{ url_for('download_excel', instructor_name='your_instructor_name') }}" download> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                        <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
+                        <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                    </svg></button>
+                  {% endif %}
+
+                  </a>
+                    </th>
+                    <th>Title</th>
+                    <th>Authors</th>
+                    <th>Publication</th>
+                    <th>Date</th>
+                    <th>Link</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for result in results %}
+                    <tr>
+                      <td>{{ loop.index }}</td>
+                      <td>{{ result.title }}</td>
+                      <td>{{ result.authors }}</td>
+                      <td>{{ result.publication }}</td>
+                      <td>{{ result.date }}</td>
+                      <td><a href="{{ result.link }}" target="_blank">View Paper</a></td>
+                    </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+              {% else %}
+                  <p></p>
+              {% endif %}
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    function logout(){
+      window.location.href = "C:\xampp\htdocs\sw\logout.php";
+     return false;
+    }
+    </script>
+</body>
+</html>
 
