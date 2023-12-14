@@ -209,7 +209,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
   function reg()
   {
-     window.location.href = 'regitration.php';
+     window.location.href = 'registration.php';
      return false;
   }
 
